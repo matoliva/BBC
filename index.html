@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Technology - BBC News</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style type="text/css">
+            body
+            {
+                margin: 0;
+                padding: 0;
+                font-family: Helvetica, Arial, sans-serif;
+
+            }
+            #topbar
+            {
+                width: 1100px;
+                margin: 0 auto;
+                height: 40px;
+                background-color: #FFFFFF;
+            }
+
+            #logo
+            {
+                margin-top: 8px;
+                margin-right: 8px;
+                width: 84px;
+                height: 24px;
+                float: left;
+            }
+            .topbar-section
+            {
+                float: left;
+                border-left: 1px #CCCCCC solid;
+                height: 100%;
+            }
+
+            #signin-imagen
+            {
+                width: 30px;
+                margin: 5px 6px;
+                float: left;
+            }
+
+            #signin-texto
+            {
+                font-weight: bold;
+                font-size: 85%;
+                position: relative;
+                top: 11px;
+                padding-right: 60px;
+            }
+
+            .topbar-menu
+            {
+                font-weight: bold;
+                font-size: 85%;
+                padding: 13px 15px 0 15px;
+                height: 27px;
+            }
+            
+            #more-flecha
+            {
+                float: right;
+                margin-left: 60px;
+            }
+
+            #search-box
+            {
+                background-color: #E4E4E4;
+                border: none;
+                font-weight: bold;
+                font-size: 14px;
+                width: 110px;
+                float: left;
+                /*margin: 0px 0px 5px 5px;*/
+                padding: 5px;
+                margin-top: -5px;
+                height: 17px;
+            }
+
+            #lupa
+            {
+                height: 27px;
+                margin-top: -5px;
+            }
+
+            .clear
+            {
+                clear: both;
+            }
+
+            #menu-bar-container
+            {
+                border-top: 1px solid #CCCCCC;
+                background-color: #BB1919;
+                width: 100%;
+                height: 70px;
+            }
+
+            #menu-bar
+            {
+                width: 1100px;
+                margin: 0 auto;
+
+            }
+
+            h1
+            {
+                padding: 0;
+                margin: 0;
+                color: white;
+                font-size: 40px;
+                font-weight: 300;
+                padding-top: 10px;
+            }
+
+            #menu-bar-container-2
+            {
+                background-color: #A91717;
+                width: 100%;
+                height: 40px;
+            }
+
+            #menu-bar-2
+            {
+                width: 1100px;
+                margin: 0 auto;
+
+            }
+
+            #menu-bar-2 a
+            {
+                color: white;
+                text-decoration: none;
+                font-size: 14px;
+                border-right: 1px solid #BB4545;
+                position: relative;
+                top: 10px;
+                padding: 0 6px;
+            }
+
+            #menu-bar-2 a:hover
+            {
+                text-decoration: underline;
+            }
+
+            .no-border
+            {
+                border: none !important;
+            }
+
+            #flecha-abajo-roja
+            {
+                height: 10px;
+                position: relative;
+                top: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="topbar">
+            <img id="logo" src="imagenes/bbc_logo_top.png" alt="bbc logo">
+            <div id="sign-in" class="topbar-section">
+                <img id="signin-imagen" src="imagenes/singin.png" alt="login">
+                    <span id="signin-texto"> Sing-in </span> 
+            </div>
+            <div class="topbar-section topbar-menu">
+                 News 
+            </div>
+            <div class="topbar-section topbar-menu">
+                Sport     
+            </div>
+            <div class="topbar-section topbar-menu">
+                Weather     
+            </div>
+            <div class="topbar-section topbar-menu">
+                Shop     
+            </div>
+            <div class="topbar-section topbar-menu">
+                Earth     
+            </div>
+            <div class="topbar-section topbar-menu">
+                More   
+                <img id="more-flecha" src="imagenes/flecha.png" alt="flecha"> 
+            </div>
+            <div class="topbar-section topbar-menu">
+                <input type="text" id="search-box" value="Search">    
+                <input type="image" id="lupa" src="imagenes/lupa.png"> 
+            </div>
+        </div> <!--cierra el top bar-->
+
+        <div class="clear">
+            
+        </div>
+        <div id="menu-bar-container">
+            <div id="menu-bar">
+                <h1>NEWS</h1>
+            </div>
+        </div>
+
+        <div id="menu-bar-container-2">
+            <div id="menu-bar-2">
+                <a href="">Home</a>
+                <a href="">Video</a>
+                <a href="">World</a>
+                <a href="">UK</a>
+                <a href="">Business</a>
+                <a href="">Tech</a>
+                <a href="">Science</a>
+                <a href="">Magazine</a>
+                <a href="">Entertainment &amp; Arts</a>
+                <a href="">Health</a>
+                <a href="">World News TV</a>
+                <a href="" class="no-border">More</a> 
+                <img id="flecha-abajo-roja" src="imagenes/flechamenu2.png" alt="flecha">
+                
+                
+            </div>
+        </div>
+    </body>
+</html>
