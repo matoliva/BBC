@@ -1,338 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Technology - BBC News</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-        <style type="text/css">
-            body
-            {
-                margin: 0;
-                padding: 0;
-                font-family: Helvetica, Arial, sans-serif;
 
-            }
-            #topbar
-            {
-                width: 1100px;
-                margin: 0 auto;
-                height: 40px;
-                background-color: #FFFFFF;
-            }
+<head>
+    <title>Technology - BBC News</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bbc.css" rel="stylesheet">
+</head>
 
-            #logo
-            {
-                margin-top: 8px;
-                margin-right: 8px;
-                width: 84px;
-                height: 24px;
-                float: left;
-            }
-            .topbar-section
-            {
-                float: left;
-                border-left: 1px #CCCCCC solid;
-                height: 100%;
-            }
-
-            #signin-imagen
-            {
-                width: 30px;
-                margin: 5px 6px;
-                float: left;
-            }
-
-            #signin-texto
-            {
-                font-weight: bold;
-                font-size: 85%;
-                position: relative;
-                top: 11px;
-                padding-right: 60px;
-            }
-
-            .topbar-menu
-            {
-                font-weight: bold;
-                font-size: 85%;
-                padding: 13px 15px 0 15px;
-                height: 27px;
-            }
-            
-            #more-flecha
-            {
-                float: right;
-                margin-left: 60px;
-            }
-
-            #search-box
-            {
-                background-color: #E4E4E4;
-                border: none;
-                font-weight: bold;
-                font-size: 14px;
-                width: 110px;
-                float: left;
-                /*margin: 0px 0px 5px 5px;*/
-                padding: 5px;
-                margin-top: -5px;
-                height: 17px;
-            }
-
-            #lupa
-            {
-                height: 27px;
-                margin-top: -5px;
-            }
-
-            .clear
-            {
-                clear: both;
-            }
-
-            #menu-bar-container
-            {
-                border-top: 1px solid #CCCCCC;
-                background-color: #BB1919;
-                width: 100%;
-                height: 70px;
-            }
-
-            #menu-bar
-            {
-                width: 1100px;
-                margin: 0 auto;
-
-            }
-
-            h1
-            {
-                padding: 0;
-                margin: 0;
-                color: white;
-                font-size: 40px;
-                font-weight: 300;
-                padding-top: 10px;
-            }
-
-            #menu-bar-container-2
-            {
-                background-color: #A91717;
-                width: 100%;
-                height: 40px;
-            }
-
-            #menu-bar-2
-            {
-                width: 1100px;
-                margin: 0 auto;
-
-            }
-
-            #menu-bar-2 a
-            {
-                color: white;
-                text-decoration: none;
-                font-size: 14px;
-                border-right: 1px solid #BB4545;
-                position: relative;
-                top: 10px;
-                padding: 0 10px;
-            }
-
-            #menu-bar-2 a:hover
-            {
-                text-decoration: underline;
-            }
-
-            .no-border
-            {
-                border: none !important;
-            }
-
-            #flecha-abajo-roja
-            {
-                height: 10px;
-                position: relative;
-                top: 10px;
-            }
-
-            #page-container
-            {
-                width: 1100px;
-                margin: 0 auto;
-            }
-
-            h2
-            {
-                font-weight: normal;
-                font-size: 20px;
-                border-bottom: 3px solid #BB1919; 
-                width: 105px;
-
-            }
-
-            h3 a
-            {
-                color: black;
-                font-size: 35px;
-                text-decoration: none;
-            }
-
-            h3 a:hover
-            {
-                color: #1167A8;
-            }
-
-            #article-summary
-            {
-                width: 240px;
-                color: #5A5A5A;
-                float: left;
-
-            }
-
-            #article-summary img
-            {
-                height: 18px;
-                position: relative;
-                top: 2px;
-                padding-right: 1px;
-            }
-
-            #topic-link
-            {
-                text-decoration: none;
-                color: #A91717;
-                border-left: 1px solid #CCCCCC;
-                padding-left: 8px;
-            }
-
-            #article-summary a:hover
-            {
-                color: #1167A8;
-            }
-
-            #date
-            {
-                padding-right: 6px;
-            }
-
-            #article-container
-            {
-                float:left;
-                width: 680px;
-                border-right: 1px solid #CCCCCC;
-                padding-right: 20px;
-            }
-
-            #main-article-image
-            {
-                width: 400px;
-                margin-left: 20px;
-            }
-
-            #article-hr
-            {
-                border-top: 1px solid #991717;
-                width: 50px;
-            }
-
-            .article-link
-            {
-                color: black;
-                text-decoration: none;
-
-            }
-
-        </style>
-    </head>
-    <body>
-        <div id="topbar">
-            <img id="logo" src="imagenes/bbc_logo_top.png" alt="bbc logo">
-            <div id="sign-in" class="topbar-section">
-                <img id="signin-imagen" src="imagenes/singin.png" alt="login">
-                    <span id="signin-texto"> Sing-in </span> 
-            </div>
-            <div class="topbar-section topbar-menu">
-                 News 
-            </div>
-            <div class="topbar-section topbar-menu">
-                Sport     
-            </div>
-            <div class="topbar-section topbar-menu">
-                Weather     
-            </div>
-            <div class="topbar-section topbar-menu">
-                Shop     
-            </div>
-            <div class="topbar-section topbar-menu">
-                Earth     
-            </div>
-            <div class="topbar-section topbar-menu">
-                Travel     
-            </div>
-            <div class="topbar-section topbar-menu">
-                More   
-                <img id="more-flecha" src="imagenes/flecha.png" alt="flecha"> 
-            </div>
-            <div class="topbar-section topbar-menu">
-                <input type="text" id="search-box" value="Search">    
-                <input type="image" id="lupa" src="imagenes/lupa.png"> 
-            </div>
-        </div> <!--cierra el top bar-->
-
-        <div class="clear">
-            
+<body>
+    <div id="topbar">
+        <img id="logo" src="imagenes/bbc_logo_top.png" alt="bbc logo">
+        <div id="sign-in" class="topbar-section">
+            <img id="signin-imagen" src="imagenes/singin.png" alt="login">
+            <span id="signin-texto"> Sing-in </span>
         </div>
-        <div id="menu-bar-container">
-            <div id="menu-bar">
-                <h1>NEWS</h1>
-            </div>
+        <div class="topbar-section topbar-menu">
+            News
         </div>
+        <div class="topbar-section topbar-menu">
+            Sport
+        </div>
+        <div class="topbar-section topbar-menu">
+            Weather
+        </div>
+        <div class="topbar-section topbar-menu">
+            Shop
+        </div>
+        <div class="topbar-section topbar-menu">
+            Earth
+        </div>
+        <div class="topbar-section topbar-menu">
+            Travel
+        </div>
+        <div class="topbar-section topbar-menu">
+            More
+            <img id="more-flecha" src="imagenes/flecha.png" alt="flecha">
+        </div>
+        <div class="topbar-section topbar-menu">
+            <input type="text" id="search-box" value="Search">
+            <input type="image" id="lupa" src="imagenes/lupa.png">
+        </div>
+    </div>
+    <!--cierra el top bar-->
 
-        <div id="menu-bar-container-2">
-            <div id="menu-bar-2">
-                <a href="">Home</a>
-                <a href="">Video</a>
-                <a href="">World</a>
-                <a href="">UK</a>
-                <a href="">Business</a>
-                <a href="">Tech</a>
-                <a href="">Science</a>
-                <a href="">Magazine</a>
-                <a href="">Entertainment &amp; Arts</a>
-                <a href="">Health</a>
-                <a href="">World News TV</a>
-                <a href="" class="no-border">More</a> 
-                <img id="flecha-abajo-roja" src="imagenes/flechamenu2.png" alt="flecha">
-            </div>
-        </div> <!--cierra el menu-bar-container-->
-        <div class="clear"> </div> <!--Limpia cualquier elemento flotante de arriba-->
-        <div id="page-container">
-            <div id="main-article">
-                <h2>Technology</h2>
-                <div id="article-container">
-                    <h3><a href="">San Bernardino hack 'cost FBI over $1m'</a></h3>
-                    <div id="article-summary">
-                        <p>The figure paid by the FBI to unnamed experts to unlock
-                        the phone of the San Bernardino killer 
-                        has been estimated at $1.3m or more.</p>
-                        <p>
-                            <img src="imagenes/relojpublicacion.png" alt="tiempo"> <span id="date">22 april 2016</span> 
-                            <a id="topic-link" href="">Technology</a>
-                        </p>
-                        <hr id="article-hr" align="left">
+    <div class="clear">
+
+    </div>
+    <div id="menu-bar-container">
+        <div id="menu-bar">
+            <h1>NEWS</h1>
+        </div>
+    </div>
+
+    <div id="menu-bar-container-2">
+        <div id="menu-bar-2">
+            <a href="">Home</a>
+            <a href="">Video</a>
+            <a href="">World</a>
+            <a href="">UK</a>
+            <a href="">Business</a>
+            <a href="">Tech</a>
+            <a href="">Science</a>
+            <a href="">Magazine</a>
+            <a href="">Entertainment &amp; Arts</a>
+            <a href="">Health</a>
+            <a href="">World News TV</a>
+            <a href="" class="no-border">More</a>
+            <img id="flecha-abajo-roja" src="imagenes/flechamenu2.png" alt="flecha">
+        </div>
+    </div>
+    <!--cierra el menu-bar-container-->
+    <div class="clear"> </div>
+    <!--Limpia cualquier elemento flotante de arriba-->
+    <div id="page-container">
+        <div id="main-article">
+            <h2>Technology</h2>
+            <div id="article-container">
+                <h3><a href="">San Bernardino hack 'cost FBI over $1m'</a></h3>
+                <div id="article-summary">
+                    <p>The figure paid by the FBI to unnamed experts to unlock the phone of the San Bernardino killer has been
+                        estimated at $1.3m or more.</p>
+                    <p>
+                        <img src="imagenes/relojpublicacion.png" alt="tiempo"> <span class="date">22 april 2016</span>
+                        <a class="topic-link" href="">Technology</a>
+                    </p>
+                    <hr id="article-hr" align="left">
                     <p> <a class="article-link" href="">Apple v the FBI - in plain English</a> </p>
                     <p> <a class="article-link" href="">Apple's FBI row is only just beginning</a> </p>
-                    </div> <!--cierra el div del resumen de la nota-->
-                    <img id="main-article-image" src="imagenes/imagen-articulo-principal.png" alt="fotoprincipal">
-                    
-                </div> <!--cierra el article-container-->
+                </div>
+                <!--cierra el div del resumen de la nota-->
+                <img id="main-article-image" src="imagenes/imagen-articulo-principal.png" alt="fotoprincipal">
+
             </div>
-            
+            <!--cierra el article-container-->
+        </div>
+        <!--cierra el main-article-->
+
+        <!--<div class="clear"> </div>-->
+
+        <div id="watch-listen">
+            <h4>Watch-listen</h4>
+            <img class="article-side-image" src="imagenes/watch1.png" alt="watch1">
+            <a class="watch-listen-link" href="">Lost at the airport? This robot can help</a>
+            <p>
+                <img src="imagenes/relojpublicacion.png" alt="tiempo"> <span class="date">22 april 2016</span>
+                <a class="topic-link" href="">Technology</a>
+            </p>
+            <img class="article-side-image" src="imagenes/watch2.png" alt="watch1">
+            <a class="watch-listen-link" href="">The self-balancing, sprinting robot</a>
+            <p>
+                <img src="imagenes/relojpublicacion.png" alt="tiempo"> <span class="date">22 april 2016</span>
+                <a class="topic-link" href="">Technology</a>
+            </p>
+            <img class="article-side-image" src="imagenes/watch3.png" alt="watch1">
+            <a class="watch-listen-link" href="">Could this box make you a better driver?</a>
+            <p>
+                <img src="imagenes/relojpublicacion.png" alt="tiempo"> <span class="date">22 april 2016</span>
+                <a class="topic-link" href="">Technology</a>
+            </p>
+
         </div>
 
-    </body>
+    </div>
+    <!--cierra el page-container -->
+
+</body>
+
 </html>
